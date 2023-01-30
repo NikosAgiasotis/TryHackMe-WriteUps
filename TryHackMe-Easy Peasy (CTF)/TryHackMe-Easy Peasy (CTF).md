@@ -80,6 +80,41 @@ We found out 3 open ports :
 ## 📌 TASK 2 : Compromising the machine
 <br>
 
+Let's try to compromising the machine ...
+
+### ❓ Question 1 : Using GoBuster, find flag 1. ?
+
+We will use GuBuster to scan for  directories in this machine . We will use the following <br>
+📜 Command : gobuster dir -u IP -w /usr/share/dirb/wordlists/big.txt
+
+```html
+
+===============================================================
+Gobuster v3.4
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.129.58
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.4
+[+] Timeout:                 10s
+===============================================================
+2023/01/30 20:38:15 Starting gobuster in directory enumeration mode
+===============================================================
+
+/hidden               (Status: 301) [Size: 169] [--> http://10.10.129.58/hidden/]
+
+/robots.txt           (Status: 200) [Size: 43]
+
+===============================================================
+2023/01/30 20:40:48 Finished
+===============================================================
+```
+
+
+
 
 
 
