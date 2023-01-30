@@ -4,7 +4,7 @@
 ## 📌 TASK 1 : Enumeration through Nmap
 <br>
 First of all we have to scan our machine for open ports. <br>
-📜 Command : sudo nmap -sV -A -p- -sC <IP>
+📜 Command : sudo nmap -sV -A -p- -sC IP
 <br>
 
 Output : 
