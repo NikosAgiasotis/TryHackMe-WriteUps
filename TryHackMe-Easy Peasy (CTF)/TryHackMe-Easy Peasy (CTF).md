@@ -114,13 +114,58 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
 ```
 
-we can see an intesting directory which is /hidden .
-IF we try to explore it 
-
-Let's try again a scan to the our new /hidden directory . <br>
+We can see an intesting directory which is /hidden ... Nothing intersting on this page. <br>
+We will scan again in the /hidden .
+ <br>
 📜 Command : gobuster dir -u 10.10.129.58/hidden  -w /usr/share/dirb/wordlists/big.txt   >  gobuster_scan2.txt
 
+<br> 
 
+```html
+===============================================================
+Gobuster v3.4
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.129.58/hidden
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.4
+[+] Timeout:                 10s
+===============================================================
+2023/01/30 21:00:15 Starting gobuster in directory enumeration mode
+===============================================================
+
+/whatever             (Status: 301) [Size: 169] [--> http://10.10.129.58/hidden/whatever/]
+
+===============================================================
+2023/01/30 21:02:50 Finished
+===============================================================
+
+```
+<br>
+
+We fount a new directory with path -> /hidden/whatever <br>
+If we check the source code of this site we can find the hash -> **ZmxhZ3tmMXJzN19mbDRnfQ==**  <br>
+
+<br>
+
+![whatever](https://i.imgur.com/y1ovkP8.png)
+
+The format of this hash is Base64. <br>
+if we decode we will get the flag of the question 1 <br>
+📜 Command : echo 'ZmxhZ3tmMXJzN19mbDRnfQ==' | base64 --decode <br>
+
+
+![flag1](https://i.imgur.com/UN5dCV0.png)
+
+✅ A : flag{f1rs7_fl4g}
+
+<br>
+<br>
+
+### ❓ Question 2 : Further enumerate the machine, what is flag 2? ?
 
 
 
