@@ -75,12 +75,13 @@ We found out 3 open ports :
 <br>
 
 -----------
+-----------
 <br>
 
 ## 📌 TASK 2 : Compromising the machine
 <br>
 
-Let's try to compromising the machine ...
+Let's try to compromise the machine ...
 
 ### ❓ Question 1 : Using GoBuster, find flag 1. ?
 
@@ -112,6 +113,13 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 2023/01/30 20:40:48 Finished
 ===============================================================
 ```
+
+we can see an intesting directory which is /hidden .
+IF we try to explore it 
+
+Let's try again a scan to the our new /hidden directory . <br>
+📜 Command : gobuster dir -u 10.10.129.58/hidden  -w /usr/share/dirb/wordlists/big.txt   >  gobuster_scan2.txt
+
 
 
 
