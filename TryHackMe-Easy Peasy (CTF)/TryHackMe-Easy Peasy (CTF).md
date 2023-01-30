@@ -167,10 +167,6 @@ if we decode we will get the flag of the question 1 <br>
 
 ### ❓ Question 2 : Further enumerate the machine, what is flag 2 ?
 
-
-
-### ❓ Question 3 : Crack the hash with easypeasy.txt, What is the flag 3?
-<br>
 As we can see we have an open port which is running an Apache Server ( 65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu)) ) <br><br>
 Lets use again GoBuster to scan for secret directories.
 
@@ -207,20 +203,53 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
 ```
 
-At this point we have to check the robots.txt directory and hope to find something usefull... <br><br>
+At this point we have to check the robots.txt directory and hope to find something usefull... <br>
+Hmm..something weird can be found on robots.txt called User-Agent...
 
-Hmm..something weird can be found on robots.txt called User-Agent..<br><br>
+<br>
 
 ![agent](https://i.imgur.com/LogJTrD.png)
 
-📜 Command : curl --user-agent a18672860d0510e5ab6699730763b250  http://10.10.129.58:65524/ | grep "flag" <br>
-(Or just inspect element on the apache site)
+
+This look like a hash. In Linux we have a tool called hash-identifier whick can find us the has-type of this string.
+<br>
+
+
 
 <br><br>
 
-We got the flag for the 3rd questing. <br>
-![flag3](https://i.imgur.com/N6QDFQi.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### ❓ Question 3 : Crack the hash with easypeasy.txt, What is the flag 3?
+
+At this point we check out the source code / inspect element the apache site
+
+📜 Command : curl http://10.10.129.58:65524/ | grep "flag" <br>
+(Or just inspect element on the apache site)
+
 <br>
+
+We got the flag for the 3rd questing. <br>
+<br>
+![flag3](https://i.imgur.com/4DfmTsh.png)
+
+<br>
+
 ✅ A : flag{9fdafbd64c47471a8f54cd3fc64cd312}
 
 
