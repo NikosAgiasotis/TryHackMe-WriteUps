@@ -165,6 +165,25 @@ if we decode we will get the flag of the question 1 <br>
 <br>
 <br>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### ❓ Question 2 : Further enumerate the machine, what is flag 2 ?
 
 As we can see we have an open port which is running an Apache Server ( 65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu)) ) <br><br>
@@ -214,8 +233,9 @@ Hmm..something weird can be found on robots.txt called User-Agent...
 This look like a hash. In Linux we have a tool called hash-identifier whick can find us the has-type of this string.
 <br>
 
+![hash](https://i.imgur.com/pKfrOOh.png) <br>
 
-
+Possible its MD5 hash <br>
 <br><br>
 
 
