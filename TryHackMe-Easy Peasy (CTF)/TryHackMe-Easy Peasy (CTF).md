@@ -114,7 +114,7 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
 ```
 
-We can see an intesting directory which is /hidden ... Nothing intersting on this page. <br>
+We can see an new directory which is /hidden ... Nothing intersting on this page. <br>
 We will scan again in the /hidden .
  <br>
 📜 Command : gobuster dir -u 10.10.129.58/hidden  -w /usr/share/dirb/wordlists/big.txt   >  gobuster_scan2.txt
