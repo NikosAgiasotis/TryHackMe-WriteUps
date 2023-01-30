@@ -170,8 +170,8 @@ if we decode we will get the flag of the question 1 <br>
 
 
 ### ❓ Question 3 : Crack the hash with easypeasy.txt, What is the flag 3?
-
-As we can see we have an open port which is running an Apache Server ( 65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu)) ) <br>
+<br>
+As we can see we have an open port which is running an Apache Server ( 65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu)) ) <br><br>
 Lets use again GoBuster to scan for secret directories.
 
 📜 Command : gobuster dir -u http://10.10.129.58:65524/ -w /usr/share/dirb/wordlists/big.txt
@@ -207,7 +207,18 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
 ===============================================================
 ```
 
-At this point we have to check the robots.txt directory and hope to find something usefull... <br>
+At this point we have to check the robots.txt directory and hope to find something usefull... <br><br>
+
+Hmm..something weird can be found on robots.txt called User-Agent..<br><br>
+
+![agent](https://i.imgur.com/LogJTrD.png)
+
+📜 Command : curl --user-agent a18672860d0510e5ab6699730763b250  http://10.10.129.58:65524/ | grep "flag" <br><br>
+
+We got the flag for the 3rd questing. <br>
+![flag3](https://i.imgur.com/N6QDFQi.png)
+
+✅ A : flag{9fdafbd64c47471a8f54cd3fc64cd312}
 
 
 
