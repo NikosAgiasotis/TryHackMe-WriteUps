@@ -213,11 +213,14 @@ Hmm..something weird can be found on robots.txt called User-Agent..<br><br>
 
 ![agent](https://i.imgur.com/LogJTrD.png)
 
-📜 Command : curl --user-agent a18672860d0510e5ab6699730763b250  http://10.10.129.58:65524/ | grep "flag" <br><br>
+📜 Command : curl --user-agent a18672860d0510e5ab6699730763b250  http://10.10.129.58:65524/ | grep "flag" <br>
+(Or just inspect element on the apache site)
+
+<br><br>
 
 We got the flag for the 3rd questing. <br>
 ![flag3](https://i.imgur.com/N6QDFQi.png)
-
+<br>
 ✅ A : flag{9fdafbd64c47471a8f54cd3fc64cd312}
 
 
