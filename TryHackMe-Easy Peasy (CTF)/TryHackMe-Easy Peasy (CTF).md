@@ -165,7 +165,50 @@ if we decode we will get the flag of the question 1 <br>
 <br>
 <br>
 
-### ❓ Question 2 : Further enumerate the machine, what is flag 2? ?
+### ❓ Question 2 : Further enumerate the machine, what is flag 2 ?
+
+
+
+### ❓ Question 3 : Crack the hash with easypeasy.txt, What is the flag 3?
+
+As we can see we have an open port which is running an Apache Server ( 65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu)) ) <br>
+Lets use again GoBuster to scan for secret directories.
+
+📜 Command : gobuster dir -u http://10.10.129.58:65524/ -w /usr/share/dirb/wordlists/big.txt
+
+<br>
+
+```html
+===============================================================
+Gobuster v3.4
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.129.58:65524/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirb/wordlists/big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.4
+[+] Timeout:                 10s
+===============================================================
+2023/01/30 21:05:56 Starting gobuster in directory enumeration mode
+===============================================================
+
+/.htaccess            (Status: 403) [Size: 280]
+
+/.htpasswd            (Status: 403) [Size: 280]
+
+/robots.txt           (Status: 200) [Size: 153]
+
+/server-status        (Status: 403) [Size: 280]
+
+===============================================================
+2023/01/30 21:08:41 Finished
+===============================================================
+```
+
+At this point we have to check the robots.txt directory and hope to find something usefull... <br>
+
 
 
 
