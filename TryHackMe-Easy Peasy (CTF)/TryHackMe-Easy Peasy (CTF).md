@@ -236,8 +236,15 @@ This look like a hash. In Linux we have a tool called hash-identifier whick can 
 ![hash](https://i.imgur.com/pKfrOOh.png) <br>
 
 Possible its MD5 hash <br>
-<br><br>
 
+We will use [this site](https://md5hashing.net/hash/md5/a18672860d0510e5ab6699730763b250) to crack the md5 hash.
+
+![flag2](https://i.imgur.com/q1UToFg.png) <br>
+
+
+✅ A : flag{1m_s3c0nd_fl4g}
+<br><br>
+<br><br>
 
 
 
