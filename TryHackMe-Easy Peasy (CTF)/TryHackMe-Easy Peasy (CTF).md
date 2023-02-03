@@ -332,7 +332,7 @@ We used an online tool to decode the hash |  [Link](https://www.dcode.fr/base62-
 
 <br><br>
  
- ### ❓ Question 5 : Crack the hash with easypeasy.txt, What is the flag 3?
+ ### ❓ Question 5 : Using the wordlist that provided to you in this task crack the hash what is the password?
 <br>
 At out new directory called /n0th1ng3ls3m4tt3r if we check the source of the site again we can recognise a new hash.
 <br>
