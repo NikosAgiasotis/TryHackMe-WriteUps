@@ -300,11 +300,14 @@ We got the flag for the 3rd questing. <br>
 
 We notice at apache webserver a hash message : 
 <br>
+**hash : ObsJmP173N2X6dOrAgEAL0Vu**
+<br>
+<br>
 ![hash](https://i.imgur.com/RL1PRv9.png)
 
 <br> After a short research we found that the encode type is base62 . 
 <br>
-We used an online tool to decode the [Tool](https://www.dcode.fr/base62-encoding) 
+We used an online tool to decode the hash |  [Link](https://www.dcode.fr/base62-encoding) 
 <br>
 
 ![hash](https://i.imgur.com/D81jC89.png)
@@ -330,12 +333,15 @@ We used an online tool to decode the [Tool](https://www.dcode.fr/base62-encoding
 <br><br>
  
  ### ❓ Question 5 : Crack the hash with easypeasy.txt, What is the flag 3?
+<br>
+At out new directory called /n0th1ng3ls3m4tt3r if we check the source of the site again we can recognise a new hash.
+<br>
 
-We can use 3 different ways to crack the hash.
+We can use 3 different ways to crack the hash with the given wordlist or not .
 
-### John the Ripper
+### John the Ripper (Wordlist)
 
-### Hashcat
+### Hashcat (Wordlist)
 
 ### Online Tool
 
