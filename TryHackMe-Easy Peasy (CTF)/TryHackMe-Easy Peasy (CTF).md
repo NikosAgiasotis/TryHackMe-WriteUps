@@ -266,7 +266,7 @@ We will use [this site](https://md5hashing.net/hash/md5/a18672860d0510e5ab669973
 
 At this point we check out the source code / inspect element the apache site
 
-📜 Command : curl http://10.10.129.58:65524/ | grep "flag" <br>
+📜 Command : curl http://IP:65524/ | grep "flag" <br>
 (Or just inspect element on the apache site)
 
 <br>
@@ -279,6 +279,80 @@ We got the flag for the 3rd questing. <br>
 
 ✅ A : flag{9fdafbd64c47471a8f54cd3fc64cd312}
 
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### ❓ Question 4 : What is the hidden directory?
+
+We notice at apache webserver a hash message : 
+<br>
+![hash](https://i.imgur.com/RL1PRv9.png)
+
+<br> After a short research we found that the encode type is base62 . 
+<br>
+We used an online tool to decode the [Tool](https://www.dcode.fr/base62-encoding) 
+<br>
+
+![hash](https://i.imgur.com/D81jC89.png)
+
+<br>
+
+✅ A : /n0th1ng3ls3m4tt3r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+ 
+ ### ❓ Question 5 : Crack the hash with easypeasy.txt, What is the flag 3?
+
+We can use 3 different ways to crack the hash.
+
+### John the Ripper
+
+### Hashcat
+
+### Online Tool
+
+
+
+📜 Command : curl http://IP:65524/ | grep "flag" <br>
+(Or just inspect element on the apache site)
+
+<br>
+
+We got the flag for the 3rd questing. <br>
+<br>
+![flag3](https://i.imgur.com/4DfmTsh.png)
+
+<br>
+
+✅ A : flag{9fdafbd64c47471a8f54cd3fc64cd312}
 
 
 
