@@ -341,24 +341,34 @@ We can use 3 different ways to crack the hash with the given wordlist or not .
 
 ### John the Ripper (Wordlist)
 
+<br>
+📜 Command : john --wordlist=easypeasy.txt --format=gost hash.txt
+<br>
+
 ### Hashcat (Wordlist)
 
-### Online Tool
+<br>
+📜 Command : hashcat -a 0 -m 6900 940d71e8655ac41efb5f8ab850668505b86dd64186a66e57d1483e7f5fe6fd81 easypeasy.txt
+<br>
+[ Hash Type -> 6900	GOST R 34.11-94 ]
 
+### Online Tool : 
 
-
-📜 Command : curl http://IP:65524/ | grep "flag" <br>
-(Or just inspect element on the apache site)
+![hash62](https://i.imgur.com/B3khr0m.png)
 
 <br>
-
-We got the flag for the 3rd questing. <br>
-<br>
-![flag3](https://i.imgur.com/4DfmTsh.png)
-
 <br>
 
-✅ A : flag{9fdafbd64c47471a8f54cd3fc64cd312}
+✅ A : /n0th1ng3ls3m4tt3r
+
+<br>
+<br>
+
+
+
+
+
+
 
 
 
