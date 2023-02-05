@@ -359,7 +359,51 @@ We can use 3 different ways to crack the hash with the given wordlist or not .
 <br>
 <br>
 
-✅ A : /n0th1ng3ls3m4tt3r
+✅ A : mypasswordforthatjob
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+<br><br>
+ 
+ ### ❓ Question 5 : Using the wordlist that provided to you in this task crack the hash what is the password?
+<br>
+
+At this point we recognized a weird photo with a binary code...maybe try to hide something in this picture ?
+<br>
+<br>
+![binaryimage](https://i.imgur.com/h6UAuoE.png)
+<br>
+<br>
+Lets find out...
+<br>
+We will use a tool called steghide to export (maybe ) something hidden..
+<br>
+📜 Command : teghide --extract -sf binarycodepixabay.jpg
+<br>
+<br>
+![decrypt](https://i.imgur.com/fT6o1mv.png)
+<br>
+<br>
+Hm something exported from this image ...
+<br>
+A username and a password in binary mode ... Lets try to decode it and see what that means ... 
+We will use an online tool called [cryptii](https://cryptii.com/pipes/binary-decoder) to decode the binary string ...
+<br>
+<br>
+![password](https://i.imgur.com/yQRUrbZ.png)
+
+<br>
+<br>
+
+✅ A : iconvertedmypasswordtobinary
 
 <br>
 <br>
