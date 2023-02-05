@@ -379,7 +379,7 @@ The online site [Md5hasing.net . ](https://md5hashing.net/hash/gost)
 
 <br><br>
  
- ### ❓ Question 5 : Using the wordlist that provided to you in this task crack the hash what is the password?
+ ### ❓ Question 6 : Using the wordlist that provided to you in this task crack the hash what is the password?
 <br>
 
 At this point we recognized a weird photo with a binary code...maybe try to hide something in this picture ?
@@ -411,6 +411,82 @@ We will use an online tool called [cryptii](https://cryptii.com/pipes/binary-dec
 
 ✅ A : iconvertedmypasswordtobinary
 
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+ 
+ ### ❓ Question 7 : What is the user flag? 
+ 
+ <br> 
+ We have to connect to the machine via SSH with the credentials we found before ... 
+ <br> 
+ username  : boring 
+ <br> 
+ password  : iconvertedmypasswordtobinary
+ 
+ <br> 
+ <br> 
+ 
+ ![](https://i.imgur.com/ZpD8yv6.png)
+  <br> 
+  Maybe a type of rot cypher encoding ? 
+    <br> 
+Lets  use [dcode.fr](https://www.dcode.fr/rot-cipher) to decode it.
+<br>
+<br>
+![rot](https://i.imgur.com/8cVaxeO.png)
+ <br>
+  <br>
+ We got the flag ...
+ 
+ ✅ A : flag{n0wits33msn0rm4l}
+ 
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+ 
+ ### ❓ Question 8 : What is the root flag? 
+ 
+ ✅ A : flag{63a9f0ea7bb98050796b649e85481845}
+ 
 <br>
 <br>
 
